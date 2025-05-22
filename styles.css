@@ -1,0 +1,201 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e6d8;
+}
+
+
+h1 {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+    opacity: 0.1;
+    margin-top: 1.5em;
+}
+
+
+.outer_container {
+    min-height: 100vh;
+    border-radius: 20px;
+    width: 35rem;
+    background-color: white;
+    padding : 30px;
+    font-family: Outfit, sans-serif;
+}
+
+/* descendent selector that targets only the img element in the img_container div */
+.img_container img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* PREPARATION SECTION */
+
+.recipe_description {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #5f574e; 
+
+}
+
+.prep_container {
+    background-color: #fff5fa;
+    border-radius: 18px;
+    padding: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 2em; 
+    color:#7b284f
+}
+
+.prep_container ul {
+  padding-left: 1.5em;
+}
+
+.prep_container span {
+    margin-left: 0.9em;
+    font-weight: 600;
+    font-size: 0.9em;
+    
+    }
+
+.prep_container p {
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #5f574e;
+    }
+
+
+
+.prep_container h3{
+   font-family : Outfit, sans-serif;
+   color:#7b284f
+}
+
+.prep_container p {
+    display: inline-block;
+    margin-top : 0px;
+    margin-bottom : 10px;
+      
+}
+
+.prep_point{
+    font-weight: 600;
+    color: #854632;   
+}
+
+.prep_text{
+    font-weight: 400;
+    color: #5f574e
+}
+
+
+/* INSTRUCTIONS SECTION */
+
+
+.ingredients_container h2 {
+    color:#7b284f
+}
+
+.ingredients_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #5f574e;
+    padding-left: 1.5em;
+}
+
+.ingredients_list li{
+    padding-left : 0.8em
+}
+
+
+.instructions_container{
+    color:#7b284f;
+}
+
+.instructions_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding-left: 1.2em;
+}
+
+.instructions_list li{
+    padding-left : 0.8em
+}
+
+/* use the ::marker "pseudo-element" to style the list item markers */
+.instructions_list li::marker {
+    color: #854632; 
+    font-weight: bold;    /* Make the number bold */
+    font-size: 0.8em;     /* Adjust size if needed */
+ 
+}
+
+
+.instructions_list span {
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #302d2c;;
+   
+}
+
+
+.instructions_list p {
+    display: inline;
+    font-size: 0.9em;
+    color: #5f574e;
+}
+
+
+
+
+/* 
+NUTRITION SECTION */
+
+
+.nutrition_container{
+    color:#7b284f;
+}
+
+.nutrition_container h3{
+    font-size: 0.8em;
+    color: #302d2c;
+    font-weight: 400;
+}
+
+.nutrition_container hr{
+    margin-top: 0px;
+}
+
+
+.nutrition_info_container {
+    display: flex;
+    align-items: center;
+}
+
+/* min width propery ensures consistent spacing between elements by making sure all span elements are the same width */
+.nutrition_info_container span{
+    min-width: 19em; 
+    margin-left: 2em;
+    color: #5f574e;
+    font-weight: 400;
+}
+
+
+.nutrition_info_container p{
+    color: #7b284f;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
